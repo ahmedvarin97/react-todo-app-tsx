@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+# ⚡ React Todo App (TSX)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, single-page Todo application built with React to help you manage your daily tasks. This app allows you to add, complete, and delete tasks in a clean and easy-to-use interface.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo  
+👉 https://react-todo-app-tsx.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧰 Repository  
+👉 https://github.com/ahmedvarin97/react-todo-app-tsx.git
 
-## Expanding the ESLint configuration
+## ✨ Features
+Create: Add new tasks to your list.
+Update: Mark tasks as complete or incomplete.
+Delete: Remove tasks you no longer need.
+Responsive UI: Works well on both desktop and mobile devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> Note: Data is fetched from the public PokéAPI. No API key is required.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧰 Tech Stack
+- **Frontend:** React (TSX)  
+- **Build Tool:** Vite (or CRA—depending on the repo setup)  
+- **Styling:** CSS / Tailwind (based on repo)  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📦 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+- **Node.js** v18+  
+- **npm** v9+ (or **yarn/pnpm**)
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/ahmedvarin97/react-jsx-todo-app.git
+cd react-jsx-todo-app
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🏗️ Build for Production
+```bash
+npm run build
+npm run preview
 ```
+
+## ⚙️ Environment Variables
+No environment variables are required for basic usage.
+If you later add features like image CDNs or rate-limited proxies, document them here.
+
+## 🗂️ Project Structure
+```bash
+src/
+ ├── components/       # UI components (e.g., TodoItem, TodoList, InputForm)
+ ├── App.jsx           # Main application component
+ └── main.jsx          # Entry point of the application
+```
+
+## 🚀 Deployment (Vercel)
+This app is deployed on Vercel.
+- Push the repo to GitHub
+- Import the project in Vercel
+- Build Command: npm run build
+- Output Directory: dist
+- Set env vars if you add any later
+
+## 🖼️ Screenshots
+<img width="1920" height="960" alt="React Todo App TSX" src="https://github.com/user-attachments/assets/eb48eefd-b98f-4999-9519-b639deee2477" />
